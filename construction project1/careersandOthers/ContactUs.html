@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Get In Touch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/BigProfect/homeheader.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+          }
+
+        .all-section{
+          margin-top: -510px;
+        }
+        @media screen and (max-width: 850px) {
+          .all-section{
+            margin-top: 0px;
+          }
+          
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #36454F 0%, #FB8B24 100%);
+            color: white;
+            padding: 100px 20px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+          }
+          .logo1{
+          margin-top: 20px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+          }
+          
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+          }
+          
+          .hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+          }
+          
+        /* Container */
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        /* Main Content Section */
+        .contact-section {
+          padding: 80px 20px;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+          background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form h2 {
+            color: #36454F;
+            font-size: 2em;
+            margin-bottom: 10px;
+          }
+          
+          .contact-form .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+          }
+          
+          .form-group {
+            margin-bottom: 25px;
+          }
+          
+          .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #36454F;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+          width: 100%;
+          padding: 12px 15px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #FB8B24;
+            box-shadow: 0 0 0 3px rgba(251, 139, 36, 0.1);
+          }
+          
+          .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+          }
+          
+          .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+          }
+          
+          .submit-btn {
+            background: linear-gradient(135deg, #FB8B24 0%, #36454F 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 139, 36, 0.3);
+            width: 100%;
+          }
+          
+          .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(251, 139, 36, 0.4);
+          }
+          
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+          }
+          
+          .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+          }
+          
+          .info-card:hover {
+            transform: translateY(-5px);
+          }
+          
+          .info-card h3 {
+            color: #36454F;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #FB8B24 0%, #36454F 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          }
+          
+          .info-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+          }
+          
+          .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: #555;
+          }
+          
+          .info-item:last-child {
+            margin-bottom: 0;
+          }
+
+          .info-item svg {
+            width: 20px;
+            height: 20px;
+            fill: #FB8B24;
+            margin-top: 3px;
+            flex-shrink: 0;
+          }
+          
+          .info-item a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+          }
+          
+          .info-item a:hover {
+            color: #FB8B24;
+        }
+
+        /* Map Section */
+        .map-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-top: 30px;
+          }
+          
+        .map-section h3 {
+          color: #36454F;
+          font-size: 1.8em;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .map-container {
+          width: 100%;
+          height: 400px;
+          background: #e5e7eb;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #666;
+          font-size: 1.1em;
+            position: relative;
+            overflow: hidden;
+          }
+
+          .map-placeholder {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .map-placeholder svg {
+            width: 60px;
+            height: 60px;
+            fill: #36454F;
+            margin-bottom: 15px;
+          }
+          
+          /* Office Hours */
+          .hours-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          }
+          
+          .hours-section h3 {
+            color: #36454F;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+          }
+
+          .hours-list {
+            list-style: none;
+          }
+          
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #555;
+          }
+          
+          .hours-list li:last-child {
+            border-bottom: none;
+          }
+          
+          .day {
+            font-weight: 600;
+            color: #36454F;
+          }
+          
+        .time {
+            color: #FB8B24;
+            font-weight: 500;
+        }
+        
+        /* Social Media */
+        .social-section {
+          text-align: center;
+          padding: 60px 20px;
+        }
+        
+        .social-section h3 {
+          color: #36454F;
+          font-size: 2em;
+            margin-bottom: 30px;
+          }
+          
+          .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+          width: 60px;
+          height: 60px;
+          background: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .social-link:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 25px rgba(251, 139, 36, 0.3);
+        }
+        
+        .social-link svg {
+          width: 28px;
+          height: 28px;
+          fill: #36454F;
+          transition: fill 0.3s ease;
+        }
+
+        .social-link:hover svg {
+          fill: #FB8B24;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+          .contact-wrapper {
+            grid-template-columns: 1fr;
+            gap: 30px;
+          }
+          
+          .form-row {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1em;
+            }
+            
+            .contact-form,
+            .info-card,
+            .map-section,
+            .hours-section {
+              padding: 25px;
+            }
+
+            .contact-section {
+              padding: 40px 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="/BigProfect/index.html"><h1 class="logo1"> TeamBuilder</h1></a>
+      <ul class="left-links">
+        <li><a href="/BigProfect/construction project1/homePage1/aboutUs/aboutUs.html" data-long="Who We Are" data-short="Who We Are"></a></li>
+        <li><a href="#" data-long="Our Expertise" data-short="Our Expertise"> </a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/ourWork.html" data-long="Our Work" data-short="More"></a></li>
+
+      </ul>
+      <ul id="pop1">
+      <li><a href="/BigProfect/construction project1/homePage1/aboutUs/aboutUs.html">About Us</a> </li>
+        <li><a href="/BigProfect/construction project1/leadership/LeaderShip.html">Leadership</a></li>
+        <li><a href="/BigProfect/construction project1/safety/safety.html">Safety</a></li>
+      </ul>
+    <ul id="pop3">
+      <li><a href="/BigProfect/construction project1/careersandOthers/ourWork.html">Our Work</a></li>
+    </ul>
+    <ul id="pop4">
+      <li><a href="/BigProfect/construction project1/careersandOthers/ourWork.html">Our Work</a></li>
+      <li><a href="#">Our Expertise</a></li>
+    </ul>
+    </div>
+    
+    
+    <ul class="right-links">
+      <li><a href="/BigProfect/construction project1/careersandOthers/careers.html" data-long="Careers" data-short="Careers"></a></li>
+      <li><a href="/BigProfect/construction project1/careersandOthers/NewsInsights.html" data-long="News+Insights" data-short="News"></a></li>
+      <li><a href="/BigProfect/construction project1/careersandOthers/ContactUs.html" data-long="Contact Us" data-short="More" class="More"></a></li>
+
+      <ul id="pop2">
+        <li><a href="/BigProfect/construction project1/careersandOthers/Professional.html">Professional</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/FieldBased.html">FieldBased</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/Internship.html">internships</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/EarlyCareers.html">Early Careers</a></li>
+      </ul>
+
+      <ul id="pop5">
+        <li><a href="/BigProfect/construction project1/careersandOthers/ContactUs.html">Contact Us</a></li>
+      </ul>
+      
+      <ul id="pop6">
+        <li><a href="/BigProfect/construction project1/careersandOthers/NewsInsights.html">News+Insights</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/ContactUs.html">Contact Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <div id="menu">
+        <div class="logo2">
+          <a href="/BigProfect/index.html"><h1 class="logo1"> TeamBuilder</h1></a>
+        </div>
+        
+        <ul>
+          <li class="has-sub">
+            <a href="#" class="mobile-trigger">Who We Are</a>
+            <ul class="sub-menu">
+            <li><a href="/BigProfect/construction project1/homePage1/aboutUs/aboutUs.html">About Us</a> </li>
+              <li><a href="/BigProfect/construction project1/leadership/LeaderShip.html">Leadership</a></li>
+              <li><a href="/BigProfect/construction project1/safety/safety.html">Safety</a></li>
+            </ul>
+          </li>
+          
+          <li class="has-sub">
+            <a href="#" class="mobile-trigger">Our Expertise</a>
+            <ul class="sub-menu expertise-menu">
+              <li class="has-sub-level2">
+                <a href="#" class="mobile-trigger-level2">Industries We Serve</a>
+                <ul class="sub-menu-level2">
+                  <li class="has-sub-level3">
+                    <li><a href="/BigProfect/construction project1/energy+cemichals/energyChemicals.html"class="mobile-trigger-level3">Energy + Chemicals</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/oilAndOthers/OnshoreOil+Gas.html">Onshore Oil + Gas</a></li>
+                      <li><a href="/BigProfect/construction project1/oilAndOthers/offshore.html">Offshore Oil + Gas</a></li>
+                      <li><a href="/BigProfect/construction project1/oilAndOthers/Pipelines.html">Pipelines + Terminals</a></li>
+                      <li><a href="/BigProfect/construction project1/oilAndOthers/Petrochemicals.html">Petrochemicals + Refining</a></li>
+                      <li><a href="/BigProfect/construction project1/oilAndOthers/Chemicals.html">Chemicals LNG</a></li>
+                      </ul>
+                      </li>
+                      <li class="has-sub-level3">
+                      <a href="#" class="mobile-trigger-level3">Power + Utilities</a>
+                      <ul class="sub-menu-level3">
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/SubstationsTransmission.html">Substations + Transmission</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Power.html">Power Generation</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/WaterWasteWater.html">Water + Wastewater</a></li>
+                      </ul>
+                      </li>
+                      <li class="has-sub-level3">
+                      <a href="#" class="mobile-trigger-level3">Energy Transition</a>
+                      <ul class="sub-menu-level3">
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Decarbonization.html">Decarbonization</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Hydrogen.html">Hydrogen</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/WindSolar.html">Wind + Solar</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Renewable.html">Renewable Natural Gas</a></li>
+                      </ul>
+                      </li>
+                      <li class="has-sub-level3">
+                      <a href="#" class="mobile-trigger-level3">Manufacturing + Infrastructure</a>
+                      <ul class="sub-menu-level3">
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Metal.html">Metal</a></li>
+                        <li><a href="/BigProfect/construction project1/oilAndOthers/Data.html">Data Centers</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="has-sub-level2">
+                <a href="#" class="mobile-trigger-level2">Services We Offer</a>
+                <ul class="sub-menu-level2">
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Engineering</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Conceptual-Engineering.html">Conceptual Engineering + Feasibility Studies</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Detailed-Engineering.html">Detailed Engineering + Design</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Owners-Enginnering.html">Owner's Engineering</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Fabrication</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Modular-Fabrication.html">Modular Fabrication by Opero Energy</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Industrial-Control.html">Industrial Control Panel Fabrication</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Construction Services</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Construction2.html">Construction</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/ConstructionManagment.html">Construction Management</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CraneHeavyLift.html">Crane + Heavy Lift</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Procurement.html">Procurement</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Project.html">Project Management</a></li>
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Automation + Controls</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/IndustrialControl2.html">Industrial Control Systems</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Scada.html">SCADA</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/OperationalTechnology.html">Operational Technology + Cybersecurity Safety</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/IndrumentalSystems.html">Instrumented Systems</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Operations + Maintenance</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CommisionigStartUp.html">Commissioning + Startup</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Decomissioning.html">Decommissioning</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Optimizatiion.html">Optimization + Debottlenecking</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Turnaround.html">Turnaround Management</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/In-PlantEngineering.html">In-Plant Engineering</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/ProcurementSafety.html">Process Safety + Risk Management</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/DisasterRecovery.html">Disaster Recovery + Restoration</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Field Services</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Inspection.html">Inspection</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Vendor.html">Vendor Surveillance</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Surveying.html">Surveying + Mapping</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/LandRight.html">Land + Right-of-Way</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/MaterialVerification.html">Material Verification</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/NondestructiveEvaluation.html">Nondestructive Evaluation</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Asset-Integrity.html">Asset Integrity + Corrosion</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/GIS+DataManagement.html">GIS + Data Management</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="has-sub-level3">
+                    <a href="#" class="mobile-trigger-level3">Environmental</a>
+                    <ul class="sub-menu-level3">
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/EnvironmentalConsulting+Regulatory Services.html">Environmental Consulting + Regulatory Services</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CarbonCapture.html">Carbon Capture</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Vapor Recovery.html">Vapor Recovery</a></li>
+                      <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/On-SiteWater.html">On-Site Water Treatment</a></li>
+                    </ul>
+                  </li>
+                  
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          
+          <li><a href="/BigProfect/construction project1/careersandOthers/ourWork.html">Our Work</a></li>
+          
+          <li class="has-sub">
+            <a href="#" class="mobile-trigger">Careers</a>
+            <ul class="sub-menu">
+          <li><a href="/BigProfect/construction project1/careersandOthers/Professional.html">Professional</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/FieldBased.html">FieldBased</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/Internship.html">Internships</a></li>
+        <li><a href="/BigProfect/construction project1/careersandOthers/EarlyCareers.html">Early Careers</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="/BigProfect/construction project1/careersandOthers/NewsInsights.html">News+Insights</a></li>
+          <li><a href="/BigProfect/construction project1/careersandOthers/ContactUs.html">Contact Us</a></li>
+          <h1 id="close-window">x</h1>
+        </ul>
+      </div>
+
+    </ul>
+  </nav>
+  <div class='bigPop'> 
+    <div class="one">
+      <h2>Explore our offerings</h2>
+      <p>Combining in-depth industry experience, technology, and technical capabilities, we help clients overcome their most complex challenges.</p>
+      <a href="/BigProfect/construction project1/careersandOthers/ContactUs.html"><button>Contact us</button></a>
+    </div>
+        <div class="two ">
+          <p>Explore By:</p>
+          <li class="trigger trigger1">
+            <a href="/BigProfect/construction project1/indisturies we serve/insdisturiesServe.html">Industries We Serve<span>></span></a>
+          </li>
+          <li class="trigger trigger2">
+           <a href="/BigProfect/construction project1/indisturies we serve/ServicesWeOffer.html">Services We Offer<span class="span1">></span></a>
+          </li>
+        </div>  
+        <div class="three">
+          <ul class="options options1">
+            <li class="trigger3"><a href="/BigProfect/construction project1/energy+cemichals/energyChemicals.html">Energy + Chemicals</a></li>
+            <li class="trigger4"><a href="/BigProfect/construction project1/Power+Utility/powerUtility.html">Power + Utilities</a></li>
+            <li class="trigger5"><a href="/BigProfect/construction project1/energy transition/energytrans.html">Energy Transition</a></li>
+            <li class="trigger6"><a href="/BigProfect/construction project1/Manufacturing + Infrastructure/Manufacturing + Infrastructure.html">Manufacturing + Infrastructure</a></li>
+          </ul>
+
+      
+          <ul class="options options2">
+            <li class="trigger7"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Engineer.html">Engineering</a></li>
+            <li class="trigger8"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Procurement.html">Procurement</a></li>
+            <li class="trigger9"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Fabrication.html">Fabrication</a></li>
+            <li class="trigger10"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Construction.html">Construction Services</a></li>
+            <li class="trigger11"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Project.html">Project Management</a></li>
+            <li class="trigger12"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Automation.html">Automation + Controls</a></li>
+            <li class="trigger13"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/O+M.html">Operations + Maintenance</a></li>
+            <li class="trigger14"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Field.html">Field Services</a></li>
+            <li class="trigger15"><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/Environmental.html">Environmental</a></li>
+          </ul>
+        </div>
+        
+        <div class="all-options">
+          <div class="four">
+            <ul class="options options3">
+              <li><a href="/BigProfect/construction project1/oilAndOthers/OnshoreOil+Gas.html">Onshore Oil + Gas</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/offshore.html">Offshore Oil + Gas</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Pipelines.html">Pipelines + Terminals</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Petrochemicals.html">Petrochemicals + Refining</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Chemicals.html">Chemicals LNG</a></li>
+            </ul>
+            <ul class="options options4">
+              <li><a href="/BigProfect/construction project1/oilAndOthers/SubstationsTransmission.html">Substations + Transmission</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Power.html"> Power Generation</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/WaterWasteWater.html"> Water + Wastewater</a></li>
+            </ul>
+            
+            <ul class="options options5">
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Decarbonization.html">Decarbonization </a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Hydrogen.html">Hydrogen</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/WindSolar.html"> Wind + Solar</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Renewable.html"> Renewable Natural Gas</a></li>
+            </ul>  
+            <ul class="options options6">
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Metal.html"> Metal</a></li>
+              <li><a href="/BigProfect/construction project1/oilAndOthers/Data.html"> Data Centers</a></li>
+            </ul>
+          </div>
+
+
+
+
+              <div class="group2">
+
+                <ul class="options options7">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Conceptual-Engineering.html">Conceptual Engineering + Feasibility Studies</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Detailed-Engineering.html">Detailed Engineering + Design</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Owners-Enginnering.html">Owner’s Engineering</a></li>
+                </ul>
+              
+                <ul class="options options8">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              
+                <ul class="options options9">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Modular-Fabrication.html">Modular Fabrication by Opero Energy</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Industrial-Control.html">Industrial Control Panel Fabrication</a></li>
+                </ul>
+              
+                <ul class="options options10">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Construction2.html">Construction</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/ConstructionManagment.html">Construction Management</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CraneHeavyLift.html">Crane + Heavy Lift</a></li>
+                </ul>
+              
+                <ul class="options options11"></ul>
+              
+                <ul class="options options12">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/IndustrialControl.html">Industrial Control Systems</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Scada.html">SCADA</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/OperationalTechnology.html">Operational Technology + Cybersecurity Safety</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/IndrumentalSystems.html">Instrumented Systems</a></li>
+                </ul>
+              
+                <ul class="options options13">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CommisionigStartUp.html">Commissioning + Startup</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Decomissioning.html">Decommissioning</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Optimizatiion.html">Optimization + Debottlenecking</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Turnaround.html">Turnaround Management</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/In-PlantEngineering.html">In-Plant Engineering</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/ProcurementSafety.html">Process Safety + Risk Management</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/DisasterRecovery.html">Disaster Recovery + Restoration</a></li>
+                </ul>
+              
+                <ul class="options options14">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Inspection.html">Inspection</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Vendor.html">Vendor Surveillance</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Surveying.html">Surveying + Mapping</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/LandRight.html">Land + Right-of-Way</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/MaterialVerification.html">Material Verification</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/NondestructiveEvaluation.html">Nondestructive Evaluation</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Asset-Integrity.html">Asset Integrity + Corrosion</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/GIS+DataManagement.html">GIS + Data Management</a></li>
+                </ul>
+              
+                <ul class="options options15">
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/EnvironmentalConsulting+Regulatory Services.html">Environmental Consulting + Regulatory Services</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/CarbonCapture.html">Carbon Capture</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/Vapor Recovery.html">Vapor Recovery</a></li>
+                  <li><a href="/BigProfect/construction project1/indisturies we serve/engineeringAndOthers/slide-folder/On-SiteWater.html">On-Site Water Treatment</a></li>
+                </ul>
+              
+              
+            </div>
+             
+       
+         
+        </div>
+        </div>
+        
+        
+    <!-- Hero Section -->
+     <div class="all-section">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Reach out to discuss your project or ask any questions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <p class="subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="quote">Request a Quote</option>
+                            <option value="project">New Project</option>
+                            <option value="careers">Careers</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <!-- Office Info -->
+                <div class="info-card">
+                    <h3>
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        Our Office
+                    </h3>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <div>
+                            <strong>Address:</strong><br>
+                            123 Construction Avenue<br>
+                            Building District, City, ST 12345
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="info-card">
+                    <h3>
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        Contact Details
+                    </h3>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@construction.com">info@construction.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <div>
+                            <strong>Fax:</strong><br>
+                            +1 (123) 456-7891
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Office Hours -->
+                <div class="hours-section">
+                    <h3>Office Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">8:00 AM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Saturday</span>
+                            <span class="time">9:00 AM - 4:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="container">
+            <div class="map-section">
+                <h3>Find Us on the Map</h3>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <p>Map integration placeholder<br>Insert your Google Maps embed code here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" class="social-link" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" class="social-link" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.70 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" class="social-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" class="social-link" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="/BigProfect/index.js"></script>
+</body>
+</html>

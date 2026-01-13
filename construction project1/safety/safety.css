@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo1{
+  margin-top: 26px !important;
+}
+/* HERO SECTION */
+.hero-safety {
+  position: relative;
+  height: 60vh;
+  min-height: 450px;
+  background: linear-gradient(135deg, #36454F 0%, #FB8B24 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-safety::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,200 Q300,100 600,200 T1200,200" stroke="rgba(255,255,255,0.1)" stroke-width="3" fill="none"/><path d="M0,350 Q300,250 600,350 T1200,350" stroke="rgba(255,255,255,0.08)" stroke-width="3" fill="none"/></svg>');
+  background-size: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.quick-links {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  border-bottom: 3px solid #FB8B24;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.quick-link {
+  text-decoration: none;
+  color: #36454F;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 28px;
+  border: 2px solid #36454F;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  background: #36454F;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.contact-btn {
+  background: #FB8B24;
+  color: white;
+  border: 2px solid #FB8B24;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  background: #e67d1f;
+  border-color: #e67d1f;
+}
+.all-section{
+  position: relative;
+  top: -503px;
+}
+
+/* INTRO SECTION */
+.intro-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  color: #36454F;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.intro-section p {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #555;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* SAFETY STATS */
+.safety-stats {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+.safety-stats h2 {
+  font-size: 2.5rem;
+  color: #36454F;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: white;
+  padding: 50px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 5px solid #FB8B24;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #FB8B24, #36454F);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  background: linear-gradient(135deg, #FB8B24, #e67d1f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  color: #36454F;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* SAFETY PILLARS */
+.safety-pillars {
+  padding: 80px 20px;
+  background: white;
+}
+
+.safety-pillars h2 {
+  font-size: 2.5rem;
+  color: #36454F;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px 35px;
+  border-radius: 12px;
+  border-left: 6px solid #FB8B24;
+  transition: all 0.3s ease;
+}
+
+.pillar-card:hover {
+  border-left-color: #36454F;
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-number {
+  width: 50px;
+  height: 50px;
+  background: #FB8B24;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pillar-card h3 {
+  font-size: 1.75rem;
+  color: #36454F;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.pillar-card p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* COMMITMENT SECTION */
+.commitment-section {
+  padding: 80px 20px;
+  background: #36454F;
+  color: white;
+}
+
+.commitment-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.commitment-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.commitment-content p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.commitment-highlight {
+  background: rgba(251, 139, 36, 0.2);
+  border-left: 4px solid #FB8B24;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.commitment-highlight h3 {
+  color: #FB8B24;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.commitment-highlight p {
+  font-size: 1.125rem;
+}
+
+/* CERTIFICATIONS SECTION */
+.certifications-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.certifications-section h2 {
+  font-size: 2.5rem;
+  color: #36454F;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cert-card:hover {
+  border-color: #FB8B24;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cert-badge {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #36454F, #4a5a68);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #FB8B24;
+  font-weight: 700;
+}
+
+.cert-card h3 {
+  font-size: 1.25rem;
+  color: #36454F;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* TRAINING SECTION */
+.training-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.training-section h2 {
+  font-size: 2.5rem;
+  color: #36454F;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.training-section p {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.training-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.training-item {
+  background: #f8f9fa;
+  padding: 25px 30px;
+  border-radius: 8px;
+  border-left: 4px solid #FB8B24;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.training-item:hover {
+  background: #e9ecef;
+  transform: translateX(10px);
+}
+
+.training-icon {
+  width: 50px;
+  height: 50px;
+  background: #FB8B24;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.training-item span {
+  font-size: 1.125rem;
+  color: #36454F;
+  font-weight: 500;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #FB8B24 0%, #e67d1f 100%);
+  text-align: center;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 18px 45px;
+  background: white;
+  color: #FB8B24;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background: #36454F;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER */
+.main-footer {
+  background: #36454F;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.main-footer p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.125rem;
+  }
+
+  .intro-section h2,
+  .safety-stats h2,
+  .safety-pillars h2,
+  .commitment-section h2,
+  .certifications-section h2,
+  .training-section h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .stats-grid,
+  .pillars-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-list {
+    grid-template-columns: 1fr;
+  }
+
+  .training-item {
+    transform: none;
+  }
+
+  .training-item:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-safety {
+    min-height: 350px;
+  }
+
+  .stat-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .pillar-card:hover {
+    transform: translateX(5px);
+  }
+}
